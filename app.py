@@ -211,7 +211,9 @@ with col_chart:
     
     with st.container(border=True):
         plt.style.use('default')
-        base_val = explainer.expected_value[0] if isinstance(explainer.expected_value, list) else explainer.expected_value
+        # ---- FIX: extract scalar base value ----
+        base_val = float(np.squeeze(explainer.expected_value))
+        
         explanation = shap.Explanation(
             values=row_shap, 
             base_values=base_val, 
