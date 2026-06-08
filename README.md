@@ -9,6 +9,10 @@
 </p>
 
 
+
+
+
+
 # 🛡️ Enterprise Telecom XAI Security Center
 
 An Explainable Artificial Intelligence (XAI) threat detection pipeline designed to safeguard telecommunications network infrastructure. This system baselines normal operations using an Unsupervised **Isolation Forest** model to detect sophisticated anomalies, then mathematically decodes and translates them into human-readable Threat Intelligence using **SHAP (SHapley Additive exPlanations)**.
