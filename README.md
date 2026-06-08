@@ -50,5 +50,6 @@ The production application is fully deployed and accessible via Streamlit Commun
 ├── requirements.txt                      # Python dependencies package manifest
 ├── telecom_web_logs_dataset.csv          # Telecom web log dataset used by the pipeline
 └── README.md                             # System documentation
+```
 
 <p align="center"> <sub>Built with ❤️ and XAI by <a href="https://github.com/Mejri-Mehdi">Mejri Mehdi</a></sub> </p>
