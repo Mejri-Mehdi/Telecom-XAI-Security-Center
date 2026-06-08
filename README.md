@@ -1,8 +1,13 @@
 # 🛡️ Enterprise Telecom XAI Security Center
 
-An Explainable Artificial Intelligence (XAI) threat detection pipeline designed to safeguard telecommunications network infrastructure. This production-ready web application baselines normal operations using an Unsupervised **Isolation Forest** model to detect sophisticated anomalies, then mathematically decodes and translates them into human-readable Threat Intelligence using **SHAP (SHapley Additive exPlanations)**.
+An Explainable Artificial Intelligence (XAI) threat detection pipeline designed to safeguard telecommunications network infrastructure. This system baselines normal operations using an Unsupervised **Isolation Forest** model to detect sophisticated anomalies, then mathematically decodes and translates them into human-readable Threat Intelligence using **SHAP (SHapley Additive exPlanations)**.
 
-Live dashboards are built with **Streamlit** and optimized for security analysts requiring immediate context behind automated security flags.
+---
+
+## 🔗 Live Deployment
+
+The production application is fully deployed and accessible via Streamlit Community Cloud:
+👉 **[Launch the Enterprise Telecom XAI Security Center](https://telecom-xai-security-center-h2nvldw84vyk84kcylnvhk.streamlit.app)**
 
 ---
 
@@ -17,7 +22,7 @@ Live dashboards are built with **Streamlit** and optimized for security analysts
 
 ## 🏗️ System Architecture & Workflow
 
-1. **Ingestion & Sanitation:** Ingests raw network web-traffic logs, automatically scrubbing high-complexity fields (such as nested JSON data) to maintain structural schema integrity.
+1. **Ingestion & Sanitation:** Ingests network web-traffic logs, automatically scrubbing high-complexity fields to maintain structural schema integrity.
 2. **Feature Engineering Dynamic:** Extracts explicit time-of-day dynamics, flags automated API calls, and standardizes continuous distributions (e.g., response times, error rates) to stabilize variance.
 3. **Isolation Modeling:** Evaluates the continuous feature matrix to identify data points that isolate quickly deep within the decision trees.
 4. **SHAP Explanation Translation:** Computes Shapley values for isolated outliers, quantifying exactly how much each parameter contributed to the anomaly score.
@@ -39,7 +44,8 @@ Live dashboards are built with **Streamlit** and optimized for security analysts
 ## 📦 Project Structure
 
 ```text
-├── app.py                      # Main Streamlit web application & compute pipeline
-├── cleaned_telecom_logs.csv    # Sanitized telecom log dataset (scrubbed features)
-├── requirements.txt            # Python dependencies package manifest
-└── README.md                   # System documentation
+├── Unsupervised Anomaly Detection.ipynb  # Core R&D notebook for model prototyping & validation
+├── app.py                                # Main Streamlit web application & compute pipeline
+├── requirements.txt                      # Python dependencies package manifest
+├── telecom_web_logs_dataset.csv          # Telecom web log dataset used by the pipeline
+└── README.md                             # System documentation
