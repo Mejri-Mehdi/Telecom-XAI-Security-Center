@@ -85,7 +85,7 @@ Here is a look at the production dashboard and the visual threat intelligence ge
 ├── app.py                                # Main Streamlit web application & compute pipeline
 ├── requirements.txt                      # Python dependencies package manifest
 ├── telecom_web_logs_dataset.csv          # Telecom web log dataset used by the pipeline
-└── README.md                             # System documentation
+├── README.md                             # System documentation
 └── Enterprise_Telecom_XAI_Security_Center_Report.pdf   # This repository contains only Part 1 
                                                           of the project report. The full 
                                                           report is divided into three parts.
