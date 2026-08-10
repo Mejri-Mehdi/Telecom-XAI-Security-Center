@@ -8,7 +8,9 @@ An Explainable Artificial Intelligence (XAI) threat detection pipeline designed 
 
 The production application is fully deployed and accessible via Streamlit Community Cloud:
 
+```
 ⚠️ Note: Since the application is hosted on a free-tier service, it may go to sleep after a period of inactivity. If the application does not load immediately, please allow a few moments for the deployment to wake up.
+```
 
 👉 **[Launch the Enterprise Telecom XAI Security Center](https://telecom-xai-security-center-h2nvldw84vyk84kcylnvhk.streamlit.app)**
 
